@@ -1,1 +1,1 @@
-# jquary_basic
+# jQuery_basic
