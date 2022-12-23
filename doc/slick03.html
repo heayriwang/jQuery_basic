@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>slick_03_제품슬라이드</title>
+    <title>slick 03 - 제품슬라이드</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/slick.css">
     <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/slick.min.js"></script>
-
     <style>
+        * {
+            outline: 1px solid --tomato;
+        }
+
         .product {
             padding: 100px 0;
         }
@@ -31,7 +34,6 @@
         .product p {
             font-size: 15px;
             font-weight: 300;
-
         }
 
         .product .inner {
@@ -48,20 +50,15 @@
             margin: 0 -15px;
         }
     </style>
-
-
 </head>
 
 <body>
 
     <section class="product">
-
         <div class="tit">
             <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, officia!</p>
-
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, vitae.</p>
         </div>
-
         <div class="inner">
             <div class="product_slide">
                 <figure>
@@ -106,21 +103,18 @@
                     <div class="dec">제품설명</div>
                     <a href="">구매하기</a>
                 </figure>
+            </div>
+        </div>
 
-            </div>
-            <div class="arrows">
-                <i class="xi-arrow-left"></i>
-                <i class="xi-arrow-right"></i>
-            </div>
     </section>
+
+
     <script>
         $(function () {
-
 
             $('.product_slide').slick({
                 slidesToShow: 5,
             })
-
 
         })
     </script>
